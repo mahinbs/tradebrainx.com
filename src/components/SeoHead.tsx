@@ -54,7 +54,6 @@ const SeoHead: React.FC<SeoHeadProps> = ({
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={ogImageUrl} />
-        {SEO.twitterHandle && <meta name="twitter:site" content={SEO.twitterHandle} />}
       </Helmet>
       {jsonLd && (
         <Helmet>
