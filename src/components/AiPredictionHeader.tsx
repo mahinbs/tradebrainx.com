@@ -6,10 +6,8 @@ import { useNavigate } from "react-router-dom";
 
 const NAV_ITEMS = [
   { id: "hero", label: "Home" },
-  { id: "markets", label: "Markets" },
   { id: "features", label: "Features" },
   { id: "pricing", label: "Pricing" },
-  { id: "testimonials", label: "Testimonials" },
 ];
 
 const scrollToSection = (id: string) => {
@@ -49,7 +47,7 @@ const AiPredictionHeader: React.FC = () => {
     <>
       <header
         className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${scrolled
-          ? "bg-[#05020a]/80 backdrop-blur-xl border-b border-purple-500/10 py-3"
+          ? "bg-[#05020a]/80 backdrop-blur-xl border-b border-emerald-500/10 py-3"
           : "bg-transparent py-5"
           }`}
       >
@@ -62,13 +60,12 @@ const AiPredictionHeader: React.FC = () => {
             }
           >
             <div className="relative">
-              <div className="absolute inset-0 bg-purple-600 blur-xl opacity-20 group-hover:opacity-40 transition-opacity rounded-full"></div>
-              {/* <img
+              <div className="absolute inset-0 bg-emerald-600 blur-xl opacity-20 group-hover:opacity-40 transition-opacity rounded-full"></div>
+              <img
                 src="/logo.png"
                 alt="tradebrainx.com"
                 className="relative w-32 md:w-40 object-contain"
-              /> */}
-              <h1 className="text-2xl font-bold">TradeBrainXs</h1>
+              />
             </div>
           </div>
 
@@ -80,10 +77,10 @@ const AiPredictionHeader: React.FC = () => {
                   <button
                     key={item.id}
                     onClick={() => handleNavClick(item.id)}
-                    className="text-sm font-medium text-gray-400 hover:text-purple-400 transition-colors uppercase tracking-wider relative group"
+                    className="text-sm font-medium text-gray-400 hover:text-emerald-400 transition-colors uppercase tracking-wider relative group cursor-pointer"
                   >
                     {item.label}
-                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
+                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-500 transition-all duration-300 group-hover:w-full"></span>
                   </button>
                 ))}
               </nav>
@@ -116,9 +113,8 @@ const AiPredictionHeader: React.FC = () => {
             onClick={() => setIsOpen(false)}
           />
 
-          <div className="absolute inset-y-0 right-0 w-[80vw] max-w-sm bg-[#0a0510] border-l border-purple-500/20 shadow-2xl flex flex-col p-6">
+          <div className="absolute inset-y-0 right-0 w-[80vw] max-w-sm bg-[#0a0510] border-l border-emerald-500/20 shadow-2xl flex flex-col p-6">
             <div className="flex justify-end items-center mb-8">
-              {/* <img src="/logo.png" alt="Logo" className="w-28 opacity-80" /> */}
               <button
                 onClick={() => setIsOpen(false)}
                 className="p-2 text-gray-400 hover:text-white"
@@ -132,7 +128,7 @@ const AiPredictionHeader: React.FC = () => {
                 <button
                   key={item.id}
                   onClick={() => handleNavClick(item.id)}
-                  className="text-left text-lg font-medium text-gray-300 hover:text-purple-400 py-3 border-b border-white/5 transition-colors"
+                  className="text-left text-lg font-medium text-gray-300 hover:text-emerald-400 py-3 border-b border-white/5 transition-colors cursor-pointer"
                 >
                   {item.label}
                 </button>
@@ -145,7 +141,7 @@ const AiPredictionHeader: React.FC = () => {
                   scrollToSection("demo");
                   setIsOpen(false);
                 }}
-                className="w-full bg-purple-600 hover:bg-purple-500 text-white py-6 text-lg rounded-xl shadow-lg shadow-purple-900/20"
+                className="w-full bg-emerald-600 hover:bg-emerald-500 text-white py-6 text-lg rounded-xl shadow-lg shadow-emerald-900/20"
               >
                 Get Started
               </Button>

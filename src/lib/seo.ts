@@ -13,7 +13,6 @@ export const SEO = {
   defaultTitle: "Next-Gen AI Market Predictions",
   defaultDescription:
     "Institutional-grade AI predictions for Stocks, Forex & Crypto. Data-driven probability models—not signals, not advice. Stop guessing, start calculating.",
-  twitterHandle: "@TradeBrainXs",
   locale: "en_US",
   get baseUrl() {
     return getBaseUrl();
