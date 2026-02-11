@@ -1,8 +1,6 @@
 import React from 'react';
 import { ScrollReveal } from '../../../components/ui/ScrollReveal';
 import { Button } from '../../../components/ui/button';
-import { FaPlay } from 'react-icons/fa';
-
 interface LiveDemoSectionProps {
   openEnquiry: () => void;
 }

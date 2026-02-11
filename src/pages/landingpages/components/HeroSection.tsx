@@ -1,7 +1,7 @@
 import React from 'react';
 import { ScrollReveal } from '../../../components/ui/ScrollReveal';
 import { Button } from '../../../components/ui/button';
-import { FaArrowRight, FaPlay } from 'react-icons/fa';
+import { FaArrowRight } from 'react-icons/fa';
 import ParticlesBackground from '../../../components/ui/ParticlesBackground';
 
 interface HeroSectionProps {
